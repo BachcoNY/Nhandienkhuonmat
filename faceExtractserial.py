@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sat Nov 23 16:27:13 2019
+
 
 @author: sj
 """
@@ -15,9 +15,10 @@ from numpy import array
 from scipy import misc
 import datetime
 import sys
-from scipy.misc import imread
+from imageio import imread
 from scipy.linalg import norm
 from scipy import sum, average
+import imageio
 num_cores = multiprocessing.cpu_count()
 
 camera = cv.VideoCapture(0)
@@ -41,9 +42,9 @@ del(camera)
 
 
 
-face = misc.imread('sj49.jpg', cv.IMREAD_UNCHANGED)
+face = imageio.imread('sj49.jpg')
 print (face.shape)
-face_cascade = cv.CascadeClassifier('C:/Users/sj/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+face_cascade = cv.CascadeClassifier('C:\\Users\\HP\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
 img = cv.imread('sj49.jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)
@@ -65,9 +66,9 @@ cv.imwrite('facegray.jpg', gray)
 
 
 
-face = misc.imread('sj149.jpg', cv.IMREAD_UNCHANGED)
+face = imageio.imread('sj149.jpg')
 print (face.shape)
-face_cascade = cv.CascadeClassifier('C:/Users/sj/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+face_cascade = cv.CascadeClassifier('C:\\Users\\HP\AppData\\Local\\Programs\\Python\\Python310\\lib\\site-packages\\cv2\\data\\haarcascade_frontalface_default.xml')
 img = cv.imread('sj149.jpg')
 gray = cv.cvtColor(img, cv.COLOR_BGR2GRAY)
 faces = face_cascade.detectMultiScale(gray, 1.1, 4)

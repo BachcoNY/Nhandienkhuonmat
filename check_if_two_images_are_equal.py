@@ -19,3 +19,8 @@ cv2.imshow("bridge/difference.jpg",img)
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()
+
+
+
+
+
