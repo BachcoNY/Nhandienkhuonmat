@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 23 16:27:13 2019
-
-@author: sj
-"""
-
 import concurrent.futures
 import Time   
 import time
@@ -15,7 +9,7 @@ from numpy import array
 from scipy import misc
 import datetime
 import sys
-from scipy.misc import imread
+from imageio import imread
 from scipy.linalg import norm
 from scipy import sum, average
 import imageio

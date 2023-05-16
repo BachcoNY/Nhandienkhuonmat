@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 23 16:27:13 2019
-
-@author: sj
-"""
-
 import concurrent.futures
 import Time   
 import time
@@ -19,10 +13,6 @@ from scipy.misc import imread
 from scipy.linalg import norm
 from scipy import sum, average
 num_cores = multiprocessing.cpu_count()
-
-
-
-
 face = misc.imread('nm/nm1.jpg', cv.IMREAD_UNCHANGED)
 print (face.shape)
 face_cascade = cv.CascadeClassifier('C:/Users/sj/Anaconda3/Lib/site-packages/cv2/data/haarcascade_frontalface_default.xml')

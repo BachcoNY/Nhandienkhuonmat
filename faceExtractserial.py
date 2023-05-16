@@ -1,10 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-
-
-@author: sj
-"""
-
 import concurrent.futures
 import Time   
 import time

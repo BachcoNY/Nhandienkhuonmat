@@ -1,17 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 27 00:48:50 2019
-
-@author: sj
-"""
-
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Nov 23 16:27:13 2019
-
-@author: sj
-"""
-
 import concurrent.futures
 import Time   
 import time
